@@ -203,10 +203,14 @@ if __name__ == "__main__":
 
 
     for one_it in Friends_l:
-        html = call_page(one_it)
-        parse_html(html)
-        print(one_it)
-        time.time(6)
+        try:
+
+            html = call_page(one_it)
+            parse_html(html)
+            print(one_it)
+
+        except:
+            pass
 
 
 # 20 23 26 * *  /usr/bin/python3 /root/f.py
